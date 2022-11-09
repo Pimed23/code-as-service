@@ -1,0 +1,14 @@
+{
+  "name": "@code-as-service/main",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "ISC",
+  "private": true,
+  "workspaces":[
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "start": "npm start -w client && npm run start -w server"
+  }
+}
