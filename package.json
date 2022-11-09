@@ -4,11 +4,14 @@
   "main": "index.js",
   "license": "ISC",
   "private": true,
-  "workspaces":[
+  "workspaces": [
     "server",
     "client"
   ],
-  "scripts": {
-    "start": "npm start -w client && npm run start -w server"
+  "scripts": { 
+    "start": "concurrently \"npm run start -w server\" \"npm start -w client\""
+  },
+  "dependencies": {
+    "concurrently": "^7.5.0"
   }
 }
