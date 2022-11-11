@@ -16,7 +16,7 @@ function App() {
   }
 
   const realizarRequest = () => {
-    fetch('http://192.168.1.3:4000/evaluatepython', {
+    fetch('http://10.233.47.210:4000/evaluatepython', {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
